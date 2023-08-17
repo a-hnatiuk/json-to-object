@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "watch": "node --watch index.js",
-    "debug": "node index.js"
+    "start": "node index.js"
   },
   "author": "Oleksander Hnatiuk",
   "license": "ISC"
