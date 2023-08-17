@@ -1,0 +1,13 @@
+{
+  "name": "json-to-object",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "watch": "node --watch index.js",
+    "debug": "node index.js"
+  },
+  "author": "Oleksander Hnatiuk",
+  "license": "ISC"
+}
