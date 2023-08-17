@@ -1,3 +1,3 @@
 export const generateRandomBoolean = () => {
-    console.log('reduceBoolean');
+    return Math.floor(Math.random() * 10) > 5
 }

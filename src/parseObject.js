@@ -22,6 +22,7 @@ export const parseObject = (chunk) => {
 
   if (chunk.hasOwnProperty('anyOf')) {
     const randomIndex = Math.floor(Math.random() * chunk.anyOf.length);
+
     return parseObject(chunk.anyOf[randomIndex])
   }
 

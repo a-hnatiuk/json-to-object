@@ -159,6 +159,7 @@
     "startDate",
     "endDate",
     "attendees",
-    "process"
+    "process",
+    "readOnly"
   ]
 }
