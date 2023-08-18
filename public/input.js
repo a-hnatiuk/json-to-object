@@ -159,6 +159,15 @@ export const jsonString = '{\n' +
   '    "startDate",\n' +
   '    "endDate",\n' +
   '    "attendees",\n' +
-  '    "process"\n' +
+  '    "process",\n' +
+  '    "readOnly",\n' +
+  '    "parentId",\n' +
+  '    "locationId",\n' +
+  '    "priorProbability",\n' +
+  '    "channelId",\n' +
+  '    "externalId",\n' +
+  '    "tags",\n' +
+  '    "form",\n' +
+  '    "formValue"' +
   '  ]\n' +
   '}\n';

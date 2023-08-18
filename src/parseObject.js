@@ -54,7 +54,7 @@ export const parseObject = (chunk) => {
             return item['$id'] === chunk.items['$ref']
           })
           if (refItems) {
-            return parseObject(refItems);
+            return [parseObject(refItems)];
           } else {
             return chunk.default || []
           }

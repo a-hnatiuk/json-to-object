@@ -160,6 +160,14 @@
     "endDate",
     "attendees",
     "process",
-    "readOnly"
+    "readOnly",
+    "parentId",
+    "locationId",
+    "priorProbability",
+    "channelId",
+    "externalId",
+    "tags",
+    "form",
+    "formValue"
   ]
 }
