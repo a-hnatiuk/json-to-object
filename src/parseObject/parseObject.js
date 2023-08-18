@@ -1,6 +1,6 @@
-import { generateRandomString } from './generateRandomString.js';
-import { generateRandomInteger } from './generateRandomInteger.js';
-import { generateRandomBoolean } from './generateRandomBoolean.js';
+import { generateRandomString } from '../generateRandomString.js';
+import { generateRandomInteger } from '../generateRandomInteger.js';
+import { generateRandomBoolean } from '../generateRandomBoolean.js';
 
 export const parseObject = (chunk) => {
   if (chunk.hasOwnProperty('definitions')) {
