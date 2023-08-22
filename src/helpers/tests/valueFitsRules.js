@@ -1,28 +1,35 @@
+const getSetOfRulesFromAnyOf = (rules) => {
+  return rules.anyOf.map(({ type }) => {
+    if (type === 'integer') {
+      return 'number';
+    } else if (type === null || type === 'null') {
+      return null;
+    }
+
+    return type;
+  })
+}
+
 export const valueFitsRules = (value, rules) => {
   if (typeof rules === 'object' && rules.hasOwnProperty('anyOf')) {
-    const arr = rules.anyOf.map(({type}) => {
-      if (type === 'integer') {
-        return 'number';
-      } else if (type === null || type === 'null') {
-        return null;
-      } else {
-        return type;
-      }
-    })
+    const setOfRules = getSetOfRulesFromAnyOf(rules);
+
     if (value === null && 'object' === typeof value) {
-      return arr.includes(null)
+      return setOfRules.includes(null)
     }
-    return arr.includes(typeof value)
+    return setOfRules.includes(typeof value)
   } else {
-    if (rules.type === 'integer') {
+    const { type } = rules;
+
+    if (type === 'integer') {
       return 'number' === typeof value;
-    } else if (rules.type === null) {
+    } else if (type === null) {
       return null === value && 'object' === typeof value;
-    } else if (rules.type === 'array') {
+    } else if (type === 'array') {
       return Array.isArray(value)
-    } else {
-      return rules.type === typeof value;
     }
+
+    return type === typeof value;
   }
 
 }

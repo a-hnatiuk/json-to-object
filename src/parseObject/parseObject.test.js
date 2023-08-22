@@ -2,8 +2,8 @@ import { parseObject } from './parseObject.js';
 import { jsonString } from '../../public/input.js';
 
 import { findPropertyInObject } from '../helpers/tests/findPropertyInObject.js';
-import { isJSON } from "../helpers/isJson.js";
-import {valueFitsRules} from "../helpers/tests/valueFitsRules.js";
+import { isJSON } from '../helpers/isJson.js';
+import {valueFitsRules} from '../helpers/tests/valueFitsRules.js';
 
 
 describe('parseObject', () => {

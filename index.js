@@ -1,5 +1,5 @@
 import { isJSON } from './src/helpers/isJson.js';
-import { parseObject } from "./src/parseObject/parseObject.js";
+import { parseObject } from './src/parseObject/parseObject.js';
 
 import jsonData from './public/input.json' assert {type: 'json'};
 import { jsonString } from './public/input.js';
