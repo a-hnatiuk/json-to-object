@@ -7,3 +7,5 @@ The field values of the objects are generated randomly based on the constraints 
 External libraries cannot be used for implementation
 
 ### `npm run start`
+
+### `npm run test`
